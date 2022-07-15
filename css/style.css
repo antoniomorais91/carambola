@@ -1,0 +1,71 @@
+:root{
+    --preta: #000;
+    --amarelo: #F4C706; 
+    --verde: #AAA700;
+}
+
+@font-face{
+    font-family: 'HFF Black Steel';
+    src: url(/fonts/HffBlackSteel.ttf);
+}
+
+@font-face{
+    font-family: 'Raleway';
+    src: url(/fonts/Raleway.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);
+    font-family: Arial, Times, serif;
+    color: #fff;
+}
+
+header{
+    padding: 1% 0;
+    text-align: center;
+    align-items: center;
+    font-family: 'Raleway', Bold;
+    font-weight: bold;
+    font-size: clamp(0.8em, 1em, 1.3em);
+    background: var(--verde);
+}
+
+header li{
+    display: inline-block;
+    margin: 0 3%;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--preta);
+}
+header a:hover{
+    text-decoration: none;
+    color: var(--amarelo);
+}
+
+#inicio{
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+#inicio h1{
+    font-size: 3vw;
+    font-family: 'HFF Black Steel';
+    color: var(--amarelo);
+    padding-left: 3%;
+}
+
+#logo{
+    width: 70%;
+}
+
